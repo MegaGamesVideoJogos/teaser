@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://cbnldw0g5u7v3"]
+[gd_scene load_steps=8 format=3 uid="uid://cbnldw0g5u7v3"]
 
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_il23c"]
 [ext_resource type="Resource" path="res://Terrain/Ponte/data.hterrain" id="2_2gict"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="3_5gd0w"]
 [ext_resource type="Texture2D" uid="uid://1u5ydafj6x46" path="res://Terrain/Ponte/slot0_albedo_bump.png" id="4_2n7fl"]
 [ext_resource type="Texture2D" uid="uid://bljb60hw4qml0" path="res://Terrain/Ponte/slot0_normal_roughness.png" id="5_xwl2i"]
+[ext_resource type="PackedScene" uid="uid://0t3rwjqrxi0u" path="res://Models/bridge.fbx" id="6_f6q2p"]
 
 [sub_resource type="Resource" id="Resource_ko3ei"]
 script = ExtResource("3_5gd0w")
@@ -30,3 +31,6 @@ shader_params/u_ground_uv_scale = 20
 shader_params/u_depth_blending = true
 shader_params/u_triplanar = null
 shader_params/u_tile_reduction = null
+
+[node name="bridge" parent="." instance=ExtResource("6_f6q2p")]
+transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 58.8361, -2.88505, 42.1402)
